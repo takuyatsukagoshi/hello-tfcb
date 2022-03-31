@@ -15,8 +15,8 @@ provider "aws" {
 }
 
 resource "aws_vpc" "hashicat" {
-  cidr_block           = var.address_space
-  enable_dns_hostnames = true
+  cidr_block            = var.address_space
+  enable_dns_hostnames  = true
 }
 
 resource "aws_subnet" "hashicat" {
